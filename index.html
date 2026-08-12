@@ -1,0 +1,1604 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Hair Technique | Precision Cuts · Master Coloring · Edgy Styling
+    </title>
+    <meta
+      name="description"
+      content="Hair Technique is a premium, edgy salon delivering masterclass precision cuts, bold color transformations, and rock-chic styling. Book your transformation today."
+    />
+    <meta
+      name="keywords"
+      content="hair salon, precision cuts, hair coloring, edgy styling, premium salon, hair transformation"
+    />
+    <meta
+      property="og:title"
+      content="Hair Technique | Precision. Artistry. Edge."
+    />
+    <meta
+      property="og:description"
+      content="Premium hair styling, cutting, and coloring. Transform your look with Hair Technique."
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="#" />
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Iconify -->
+    <script
+      src="https://code.iconify.design/3/3.1.0/iconify.min.js"
+      defer
+    ></script>
+
+    <!-- GSAP -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+      defer
+    ></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- ══════════════════════════════════════════════════════
+       PAGE LOADER
+  ══════════════════════════════════════════════════════════ -->
+    <div id="page-loader" role="status" aria-label="Loading Hair Technique">
+      <div class="loader-logo">Hair Technique</div>
+      <div class="loader-bar"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════════ -->
+    <header>
+      <nav id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+          <div class="nav-inner">
+            <!-- Logo -->
+            <a href="#hero" class="nav-logo" aria-label="Hair Technique — Home">
+              <!-- Replace src with your actual logo file: images/logo.jpg -->
+              <img
+                src="images/204198538_4732889366737875_8848291790640585364_n - Edited.png"
+                alt="Hair Technique Logo"
+                class="nav-logo-img"
+                onerror="this.style.display = 'none'"
+              />
+              <span class="nav-logo-text">Hair <span>Technique</span></span>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <ul class="nav-links" id="nav-links" role="list">
+              <li><a href="#technique">The Craft</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#story">Our Story</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#testimonials">Reviews</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li>
+                <a
+                  href="#cta-banner"
+                  class="btn btn-metallic nav-cta"
+                  id="nav-book-btn"
+                  aria-label="Book your appointment"
+                >
+                  Book Now
+                </a>
+              </li>
+            </ul>
+
+            <!-- Mobile Hamburger -->
+            <button
+              class="nav-hamburger"
+              id="nav-hamburger"
+              aria-label="Toggle mobile menu"
+              aria-expanded="false"
+              aria-controls="nav-links"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ══════════════════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════════════════════ -->
+      <section id="hero" aria-labelledby="hero-heading">
+        <!-- Background image (Unsplash — high-contrast monochrome salon) -->
+        <div class="hero-bg" aria-hidden="true">
+          <img
+            src="images/unnamed.jpg"
+            alt=""
+            class="hero-bg-image"
+            loading="eager"
+            fetchpriority="high"
+          />
+          <div class="hero-bg-overlay"></div>
+        </div>
+
+        <!-- Animated spiral (interior-inspired) -->
+        <div class="spiral-container" aria-hidden="true">
+          <svg
+            class="spiral-bg"
+            viewBox="0 0 800 800"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <!-- Hypnotic concentric spiral lines echoing the salon's wall mural -->
+            <g stroke="white" fill="none" stroke-width="1.2">
+              <path
+                d="M400,400 C400,350 440,310 400,270 C360,230 290,250 270,290 C250,330 280,390 320,410 C360,430 420,400 430,360 C440,320 410,275 375,270 C340,265 305,295 300,330 C295,365 320,400 355,405"
+              />
+              <circle cx="400" cy="400" r="20" />
+              <circle cx="400" cy="400" r="50" />
+              <circle cx="400" cy="400" r="90" />
+              <circle cx="400" cy="400" r="140" />
+              <circle cx="400" cy="400" r="200" />
+              <circle cx="400" cy="400" r="270" />
+              <circle cx="400" cy="400" r="350" />
+              <!-- Radiating spokes -->
+              <line x1="400" y1="50" x2="400" y2="750" />
+              <line x1="50" y1="400" x2="750" y2="400" />
+              <line x1="138" y1="138" x2="662" y2="662" />
+              <line x1="662" y1="138" x2="138" y2="662" />
+              <line x1="50" y1="280" x2="750" y2="520" />
+              <line x1="280" y1="50" x2="520" y2="750" />
+              <line x1="750" y1="280" x2="50" y2="520" />
+              <line x1="520" y1="50" x2="280" y2="750" />
+              <!-- Extra arcs for depth -->
+              <ellipse
+                cx="400"
+                cy="400"
+                rx="180"
+                ry="350"
+                transform="rotate(30 400 400)"
+              />
+              <ellipse
+                cx="400"
+                cy="400"
+                rx="180"
+                ry="350"
+                transform="rotate(60 400 400)"
+              />
+              <ellipse
+                cx="400"
+                cy="400"
+                rx="180"
+                ry="350"
+                transform="rotate(90 400 400)"
+              />
+              <ellipse
+                cx="400"
+                cy="400"
+                rx="180"
+                ry="350"
+                transform="rotate(120 400 400)"
+              />
+              <ellipse
+                cx="400"
+                cy="400"
+                rx="180"
+                ry="350"
+                transform="rotate(150 400 400)"
+              />
+            </g>
+          </svg>
+        </div>
+
+        <!-- Noise texture -->
+        <div class="hero-noise" aria-hidden="true"></div>
+
+        <!-- Content -->
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-tag" aria-label="Premium Hair Salon">
+              <i class="fa-solid fa-scissors" aria-hidden="true"></i>
+              Premium Hair Studio · Est. 2010
+            </div>
+
+            <h1 id="hero-heading" class="hero-headline">
+              <span class="line-1">Find</span>
+              <span class="line-2 line-silver">Your</span>
+              <span class="line-3">Edge.</span>
+            </h1>
+
+            <p class="hero-sub">
+              Precision. Artistry. Transformation. Where masterclass technique
+              meets rock-chic soul — your most powerful look starts here.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#cta-banner" class="btn btn-primary" id="hero-book-btn">
+                <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                Book Your Transformation
+              </a>
+              <a
+                href="#services"
+                class="btn btn-outline"
+                id="hero-services-btn"
+              >
+                Explore Services
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <div class="hero-trust" aria-label="Client ratings">
+              <div class="hero-trust-stars" aria-label="5 out of 5 stars">
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+              </div>
+              <p class="hero-trust-text">
+                <strong>500+ transformations</strong> · 5-star rated salon
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="hero-scroll-indicator" aria-hidden="true">
+          <i class="fa-solid fa-chevron-down"></i>
+          <span>Scroll</span>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════════
+         MARQUEE
+    ══════════════════════════════════════════════════════════ -->
+      <section id="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <!-- Duplicated for seamless loop -->
+          <span class="marquee-item"
+            >Precision Cuts <span class="marquee-dot"></span
+          ></span>
+          <span class="marquee-item"
+            >Master Coloring <span class="marquee-dot"></span
+          ></span>
+          <span class="marquee-item"
+            >Edgy Styling <span class="marquee-dot"></span
+          ></span>
+          <span class="marquee-item"
+            >Rock-Chic Vibe <span class="marquee-dot"></span
+          ></span>
+          <span class="marquee-item"
+            >Sculpted Perfection <span class="marquee-dot"></span
+          ></span>
+          <span class="marquee-item"
+            >Transform Your Look <span class="marquee-dot"></span
+          ></span>
+          <span class="marquee-item"
+            >Find Your Edge <span class="marquee-dot"></span
+          ></span>
+          <span class="marquee-item"
+            >Precision Cuts <span class="marquee-dot"></span
+          ></span>
+          <span class="marquee-item"
+            >Master Coloring <span class="marquee-dot"></span
+          ></span>
+          <span class="marquee-item"
+            >Edgy Styling <span class="marquee-dot"></span
+          ></span>
+          <span class="marquee-item"
+            >Rock-Chic Vibe <span class="marquee-dot"></span
+          ></span>
+          <span class="marquee-item"
+            >Sculpted Perfection <span class="marquee-dot"></span
+          ></span>
+          <span class="marquee-item"
+            >Transform Your Look <span class="marquee-dot"></span
+          ></span>
+          <span class="marquee-item"
+            >Find Your Edge <span class="marquee-dot"></span
+          ></span>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════════
+         THE TECHNIQUE
+    ══════════════════════════════════════════════════════════ -->
+      <section id="technique" aria-labelledby="technique-heading">
+        <div class="container">
+          <div>
+            <p class="section-label">
+              <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+              The Craft
+            </p>
+            <h2 id="technique-heading" class="section-title">
+              Our<br />Technique
+            </h2>
+            <p class="section-subtitle">
+              Every cut is a statement. Every color, a masterpiece. We don't
+              just style hair — we sculpt identity.
+            </p>
+          </div>
+
+          <div class="technique-grid">
+            <article
+              class="technique-card reveal"
+              aria-label="Precision Sculpted Cuts"
+            >
+              <span class="technique-num" aria-hidden="true">01</span>
+              <div class="technique-icon" aria-hidden="true">
+                <i class="fa-solid fa-scissors"></i>
+              </div>
+              <h3 class="technique-name">Precision Cuts</h3>
+              <p class="technique-desc">
+                Sharp. Sculpted. Exact. Our master stylists read bone structure,
+                lifestyle, and attitude to craft cuts that move with you — not
+                against you.
+              </p>
+            </article>
+
+            <article
+              class="technique-card reveal"
+              aria-label="Master Color Artistry"
+            >
+              <span class="technique-num" aria-hidden="true">02</span>
+              <div class="technique-icon" aria-hidden="true">
+                <iconify-icon
+                  icon="mdi:palette"
+                  aria-hidden="true"
+                ></iconify-icon>
+              </div>
+              <h3 class="technique-name">Master Coloring</h3>
+              <p class="technique-desc">
+                From bold blocks to seamless balayage — we wield color like
+                weaponry. Vibrant, lasting, and always intentional. No
+                compromises.
+              </p>
+            </article>
+
+            <article
+              class="technique-card reveal"
+              aria-label="Edgy Creative Styling"
+            >
+              <span class="technique-num" aria-hidden="true">03</span>
+              <div class="technique-icon" aria-hidden="true">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <h3 class="technique-name">Edgy Styling</h3>
+              <p class="technique-desc">
+                Texture, volume, attitude. Whether you want polished perfection
+                or untamed edge, we shape styles that command attention in every
+                room.
+              </p>
+            </article>
+
+            <article
+              class="technique-card reveal"
+              aria-label="Deep Hair Treatments"
+            >
+              <span class="technique-num" aria-hidden="true">04</span>
+              <div class="technique-icon" aria-hidden="true">
+                <iconify-icon icon="mdi:leaf" aria-hidden="true"></iconify-icon>
+              </div>
+              <h3 class="technique-name">Hair Therapy</h3>
+              <p class="technique-desc">
+                Strengthen. Restore. Revive. Premium treatments that rebuild
+                from within — because the best styles start with the healthiest
+                hair.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════════
+         OUR STORY / THE VIBE
+    ══════════════════════════════════════════════════════════ -->
+      <section id="story" aria-labelledby="story-heading">
+        <div class="container">
+          <div class="story-grid">
+            <!-- Image -->
+            <div class="story-image-wrapper">
+              <div class="story-image-frame">
+                <!-- Replace with your actual interior image: images/interior.webp -->
+                <img
+                  data-src="images/interior.webp"
+                  src="images/interior.webp"
+                  alt="Hair Technique salon interior — striking black and white spiral wall mural with chrome chairs"
+                  loading="lazy"
+                  onerror="
+                    this.src =
+                      'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&q=80&auto=format&fit=crop'
+                  "
+                />
+              </div>
+              <div class="story-accent-box" aria-hidden="true">
+                15+
+                <span>Years of Edge</span>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="story-content">
+              <p class="section-label">
+                <i class="fa-solid fa-fire" aria-hidden="true"></i>
+                Our Story
+              </p>
+              <h2 id="story-heading" class="section-title">The Vibe</h2>
+
+              <p class="story-body">
+                <strong>Hair Technique was born from rebellion.</strong> Not the
+                destructive kind — the creative kind. The refusal to accept
+                mediocrity. The obsession with precision. The belief that a
+                haircut should feel like an event.
+              </p>
+              <p class="story-body">
+                Walk in and you'll feel it immediately. The hypnotic
+                black-and-white spiral murals. The chrome and obsidian
+                aesthetic. The sound of scissors meeting purpose.
+                <strong>This isn't just a salon. It's a statement.</strong>
+              </p>
+              <p class="story-body">
+                Our stylists don't just cut hair — they study it. Strand by
+                strand, they understand your texture, your lifestyle, your
+                boldness. Then they sculpt something that's unmistakably
+                <em>you</em>.
+              </p>
+
+              <div class="divider" aria-hidden="true"></div>
+
+              <div
+                class="story-stats"
+                role="list"
+                aria-label="Salon statistics"
+              >
+                <div role="listitem">
+                  <div class="story-stat-num" aria-label="500 plus">500+</div>
+                  <div class="story-stat-label">Transformations</div>
+                </div>
+                <div role="listitem">
+                  <div class="story-stat-num" aria-label="5 star">5★</div>
+                  <div class="story-stat-label">Average Rating</div>
+                </div>
+                <div role="listitem">
+                  <div class="story-stat-num" aria-label="15 plus years">
+                    15+
+                  </div>
+                  <div class="story-stat-label">Years of Edge</div>
+                </div>
+              </div>
+
+              <a
+                href="#cta-banner"
+                class="btn btn-primary"
+                id="story-book-btn"
+                style="margin-top: 32px; align-self: flex-start"
+              >
+                Meet Our Stylists
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════════
+         SERVICES
+    ══════════════════════════════════════════════════════════ -->
+      <section id="services" aria-labelledby="services-heading">
+        <div class="container">
+          <div class="services-header">
+            <div>
+              <p class="section-label">
+                <i class="fa-solid fa-gem" aria-hidden="true"></i>
+                What We Do
+              </p>
+              <h2 id="services-heading" class="section-title">Services</h2>
+            </div>
+            <p class="section-subtitle">
+              Every service is delivered with obsessive precision. No
+              half-measures. No shortcuts. Only mastery.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <!-- Cut -->
+            <article
+              class="service-card"
+              aria-label="Precision Haircuts service"
+            >
+              <img
+                data-src="https://images.unsplash.com/photo-1519735777090-ec97162dc266?w=700&q=80&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1519735777090-ec97162dc266?w=700&q=80&auto=format&fit=crop"
+                alt="Stylist cutting hair with precision"
+                class="service-card-img"
+                loading="lazy"
+              />
+              <div class="service-card-content">
+                <div class="service-card-icon" aria-hidden="true">
+                  <i class="fa-solid fa-scissors"></i>
+                </div>
+                <h3 class="service-card-title">The Cut</h3>
+                <p class="service-card-desc">
+                  Precision sculpting for every head shape, hair type, and
+                  lifestyle. Custom consultation included.
+                </p>
+                <span class="service-card-cta" aria-hidden="true">
+                  Book This <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </div>
+            </article>
+
+            <!-- Color -->
+            <article
+              class="service-card"
+              aria-label="Hair Color Artistry service"
+            >
+              <img
+                data-src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=700&q=80&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=700&q=80&auto=format&fit=crop"
+                alt="Hair coloring in progress in salon"
+                class="service-card-img"
+                loading="lazy"
+              />
+              <div class="service-card-content">
+                <div class="service-card-icon" aria-hidden="true">
+                  <iconify-icon
+                    icon="mdi:palette"
+                    aria-hidden="true"
+                  ></iconify-icon>
+                </div>
+                <h3 class="service-card-title">Color</h3>
+                <p class="service-card-desc">
+                  From platinum blonde to jet black. Balayage, ombre, foils, and
+                  full color. Bold or subtle — your call.
+                </p>
+                <span class="service-card-cta" aria-hidden="true">
+                  Book This <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </div>
+            </article>
+
+            <!-- Treatments -->
+            <article class="service-card" aria-label="Hair Treatments service">
+              <img
+                data-src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=700&q=80&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=700&q=80&auto=format&fit=crop"
+                alt="Luxury hair treatment being applied"
+                class="service-card-img"
+                loading="lazy"
+              />
+              <div class="service-card-content">
+                <div class="service-card-icon" aria-hidden="true">
+                  <iconify-icon
+                    icon="mdi:leaf"
+                    aria-hidden="true"
+                  ></iconify-icon>
+                </div>
+                <h3 class="service-card-title">Treatments</h3>
+                <p class="service-card-desc">
+                  Keratin. Deep conditioning. Scalp therapy. We rebuild your
+                  hair's strength and shine from within.
+                </p>
+                <span class="service-card-cta" aria-hidden="true">
+                  Book This <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </div>
+            </article>
+
+            <!-- Styling -->
+            <article
+              class="service-card"
+              aria-label="Styling and Blowouts service"
+            >
+              <img
+                data-src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=700&q=80&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=700&q=80&auto=format&fit=crop"
+                alt="Hair styling blowout in luxury salon"
+                class="service-card-img"
+                loading="lazy"
+              />
+              <div class="service-card-content">
+                <div class="service-card-icon" aria-hidden="true">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <h3 class="service-card-title">Styling</h3>
+                <p class="service-card-desc">
+                  Blowouts, updos, editorial looks. Whether it's a power meeting
+                  or a night out — we set the scene.
+                </p>
+                <span class="service-card-cta" aria-hidden="true">
+                  Book This <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════════
+         WHY CHOOSE US
+    ══════════════════════════════════════════════════════════ -->
+      <section id="why" aria-labelledby="why-heading">
+        <div class="container">
+          <p class="section-label">
+            <i class="fa-solid fa-award" aria-hidden="true"></i>
+            Why Hair Technique
+          </p>
+          <h2 id="why-heading" class="section-title">The<br />Difference</h2>
+
+          <div class="why-grid">
+            <div class="why-reasons">
+              <article
+                class="why-item reveal"
+                aria-label="Expert Master Stylists"
+              >
+                <div class="why-icon" aria-hidden="true">
+                  <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div>
+                  <h3 class="why-text-title">Master Stylists</h3>
+                  <p class="why-text-desc">
+                    Every stylist at Hair Technique is extensively trained,
+                    continuously educated, and genuinely obsessed with their
+                    craft. No rookies. No compromises.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                class="why-item reveal"
+                aria-label="Bespoke Consultations"
+              >
+                <div class="why-icon" aria-hidden="true">
+                  <i class="fa-solid fa-comments"></i>
+                </div>
+                <div>
+                  <h3 class="why-text-title">Bespoke Consultations</h3>
+                  <p class="why-text-desc">
+                    We listen first. Every appointment starts with a deep
+                    consultation to understand your vision, your hair health,
+                    and your bold potential.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                class="why-item reveal"
+                aria-label="Premium Products Used"
+              >
+                <div class="why-icon" aria-hidden="true">
+                  <iconify-icon
+                    icon="mdi:star-circle"
+                    aria-hidden="true"
+                  ></iconify-icon>
+                </div>
+                <div>
+                  <h3 class="why-text-title">Premium Products Only</h3>
+                  <p class="why-text-desc">
+                    We exclusively use professional-grade, salon-quality
+                    products. Your hair deserves the best — we never settle for
+                    less.
+                  </p>
+                </div>
+              </article>
+
+              <article
+                class="why-item reveal"
+                aria-label="Immersive Atmosphere"
+              >
+                <div class="why-icon" aria-hidden="true">
+                  <iconify-icon
+                    icon="mdi:lightning-bolt"
+                    aria-hidden="true"
+                  ></iconify-icon>
+                </div>
+                <div>
+                  <h3 class="why-text-title">Immersive Experience</h3>
+                  <p class="why-text-desc">
+                    The moment you walk in — the spiral murals, chrome seats,
+                    curated energy — you know this is different. This is more
+                    than a haircut. It's an experience.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <!-- Image grid -->
+            <div class="why-image-block">
+              <div
+                class="why-image-grid"
+                aria-label="Gallery of salon and styling work"
+              >
+                <img
+                  data-src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=800&q=80&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=800&q=80&auto=format&fit=crop"
+                  alt="Professional salon interior with modern equipment"
+                  loading="lazy"
+                />
+                <img
+                  data-src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=400&q=80&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=400&q=80&auto=format&fit=crop"
+                  alt="Stylist working with precision on a client"
+                  loading="lazy"
+                />
+                <img
+                  data-src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=400&q=80&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=400&q=80&auto=format&fit=crop"
+                  alt="Bold hair color transformation result"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════════
+         GALLERY
+    ══════════════════════════════════════════════════════════ -->
+      <section id="gallery" aria-labelledby="gallery-heading">
+        <div class="container">
+          <div class="gallery-intro">
+            <p class="section-label">
+              <i class="fa-solid fa-camera" aria-hidden="true"></i>
+              The Transformations
+            </p>
+            <h2 id="gallery-heading" class="section-title">The Work</h2>
+            <p
+              class="section-subtitle"
+              style="text-align: center; margin: 0 auto"
+            >
+              Bold cuts. Fierce color. Real people. Real transformations. This
+              is what mastery looks like.
+            </p>
+          </div>
+
+          <div class="gallery-grid" role="list" aria-label="Portfolio gallery">
+            <figure class="gallery-item wide" role="listitem">
+              <img
+                data-src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1000&q=80&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1000&q=80&auto=format&fit=crop"
+                alt="Elegant modern salon interior with dramatic lighting"
+                loading="lazy"
+              />
+              <div class="gallery-item-overlay" aria-hidden="true">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+            </figure>
+
+            <figure class="gallery-item tall" role="listitem">
+              <img
+                data-src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=500&q=80&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=500&q=80&auto=format&fit=crop"
+                alt="Bold short hair transformation — edgy model look"
+                loading="lazy"
+              />
+              <div class="gallery-item-overlay" aria-hidden="true">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+            </figure>
+
+            <figure class="gallery-item" role="listitem">
+              <img
+                data-src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=500&q=80&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=500&q=80&auto=format&fit=crop"
+                alt="High-contrast black and white hair portrait"
+                loading="lazy"
+              />
+              <div class="gallery-item-overlay" aria-hidden="true">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+            </figure>
+
+            <figure class="gallery-item" role="listitem">
+              <img
+                data-src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=500&q=80&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=500&q=80&auto=format&fit=crop"
+                alt="Stylist scissors close-up — precision craftsmanship"
+                loading="lazy"
+              />
+              <div class="gallery-item-overlay" aria-hidden="true">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+            </figure>
+
+            <figure class="gallery-item" role="listitem">
+              <img
+                data-src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=500&q=80&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=500&q=80&auto=format&fit=crop"
+                alt="Model with sleek, sculpted hairstyle"
+                loading="lazy"
+              />
+              <div class="gallery-item-overlay" aria-hidden="true">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+            </figure>
+
+            <figure class="gallery-item" role="listitem">
+              <img
+                data-src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?w=500&q=80&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?w=500&q=80&auto=format&fit=crop"
+                alt="Dramatic hair color — platinum and dark contrast"
+                loading="lazy"
+              />
+              <div class="gallery-item-overlay" aria-hidden="true">
+                <i class="fa-solid fa-expand"></i>
+              </div>
+            </figure>
+          </div>
+
+          <div class="gallery-instagram">
+            <p class="gallery-instagram-handle">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              @hairtechnique — Follow for daily inspo
+            </p>
+            <a
+              href="#"
+              class="btn btn-outline"
+              id="gallery-instagram-btn"
+              aria-label="Follow Hair Technique on Instagram"
+            >
+              Follow Us
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════════
+         TESTIMONIALS
+    ══════════════════════════════════════════════════════════ -->
+      <section id="testimonials" aria-labelledby="testimonials-heading">
+        <div class="container">
+          <div class="testimonials-header">
+            <p class="section-label">
+              <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+              The Verdict
+            </p>
+            <h2 id="testimonials-heading" class="section-title">
+              Real Results.<br />Real People.
+            </h2>
+          </div>
+
+          <div class="testimonials-track-outer">
+            <div
+              class="testimonials-track"
+              id="testimonials-track"
+              role="list"
+              aria-label="Client testimonials"
+            >
+              <article class="testimonial-card" role="listitem">
+                <div class="testimonial-stars" aria-label="5 stars">
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                </div>
+                <p class="testimonial-text">
+                  "I've been going to salons my whole life and never felt this
+                  level of care and precision. They didn't just cut my hair —
+                  they transformed my entire energy. I walked out feeling like a
+                  completely different person."
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&q=80&auto=format&fit=crop"
+                    alt="Sarah M. — Hair Technique client"
+                    class="testimonial-avatar"
+                    loading="lazy"
+                  />
+                  <div>
+                    <div class="testimonial-name">Sarah M.</div>
+                    <div class="testimonial-role">Regular Client · 3 Years</div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="testimonial-card" role="listitem">
+                <div class="testimonial-stars" aria-label="5 stars">
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                </div>
+                <p class="testimonial-text">
+                  "The color work is absolutely unreal. I brought in a reference
+                  photo that I thought was impossible — they nailed it
+                  perfectly. The attention to detail and the atmosphere in this
+                  salon is unlike anything else in the city."
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=96&h=96&q=80&auto=format&fit=crop"
+                    alt="James K. — Hair Technique client"
+                    class="testimonial-avatar"
+                    loading="lazy"
+                  />
+                  <div>
+                    <div class="testimonial-name">James K.</div>
+                    <div class="testimonial-role">Color Client · 1 Year</div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="testimonial-card" role="listitem">
+                <div class="testimonial-stars" aria-label="5 stars">
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                </div>
+                <p class="testimonial-text">
+                  "The spiral wall is genuinely hypnotic and the whole vibe is
+                  immaculate. But more importantly — my cut is the best I've
+                  ever had. Booked again on the spot. That never happens with
+                  me."
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=96&h=96&q=80&auto=format&fit=crop"
+                    alt="Aisha T. — Hair Technique client"
+                    class="testimonial-avatar"
+                    loading="lazy"
+                  />
+                  <div>
+                    <div class="testimonial-name">Aisha T.</div>
+                    <div class="testimonial-role">
+                      New Client · Instantly Converted
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="testimonial-card" role="listitem">
+                <div class="testimonial-stars" aria-label="5 stars">
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  <i class="fa-solid fa-star" aria-hidden="true"></i>
+                </div>
+                <p class="testimonial-text">
+                  "I came in nervous after a bad salon experience elsewhere. The
+                  consultation alone put me at ease. They listened, advised, and
+                  delivered exactly what I needed. My hair has never felt this
+                  healthy or looked this sharp."
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=96&h=96&q=80&auto=format&fit=crop"
+                    alt="Marcus D. — Hair Technique client"
+                    class="testimonial-avatar"
+                    loading="lazy"
+                  />
+                  <div>
+                    <div class="testimonial-name">Marcus D.</div>
+                    <div class="testimonial-role">
+                      Treatment Client · 6 Months
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="testimonials-nav" aria-label="Testimonial navigation">
+            <button
+              class="testimonials-btn"
+              id="testimonials-prev"
+              aria-label="Previous testimonials"
+            >
+              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <button
+              class="testimonials-btn"
+              id="testimonials-next"
+              aria-label="Next testimonials"
+            >
+              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════════
+         FAQ
+    ══════════════════════════════════════════════════════════ -->
+      <section id="faq" aria-labelledby="faq-heading">
+        <div class="container">
+          <p class="section-label">
+            <i class="fa-solid fa-circle-question" aria-hidden="true"></i>
+            Got Questions?
+          </p>
+          <h2 id="faq-heading" class="section-title">FAQ</h2>
+
+          <div class="faq-layout">
+            <!-- Questions -->
+            <div>
+              <dl class="faq-list" role="list">
+                <div class="faq-item" role="listitem">
+                  <dt>
+                    <button
+                      class="faq-question"
+                      aria-expanded="false"
+                      id="faq-q1"
+                      aria-controls="faq-a1"
+                    >
+                      Do you accept walk-ins or is it appointment only?
+                      <span class="faq-icon" aria-hidden="true"
+                        ><i class="fa-solid fa-plus"></i
+                      ></span>
+                    </button>
+                  </dt>
+                  <dd
+                    class="faq-answer"
+                    id="faq-a1"
+                    role="region"
+                    aria-labelledby="faq-q1"
+                  >
+                    <p>
+                      We primarily operate by appointment to ensure every client
+                      gets our full, undivided attention. However, we do
+                      accommodate walk-ins based on availability. To guarantee
+                      your preferred time slot, we strongly recommend booking in
+                      advance — especially on weekends.
+                    </p>
+                  </dd>
+                </div>
+
+                <div class="faq-item" role="listitem">
+                  <dt>
+                    <button
+                      class="faq-question"
+                      aria-expanded="false"
+                      id="faq-q2"
+                      aria-controls="faq-a2"
+                    >
+                      How far in advance should I book a color appointment?
+                      <span class="faq-icon" aria-hidden="true"
+                        ><i class="fa-solid fa-plus"></i
+                      ></span>
+                    </button>
+                  </dt>
+                  <dd
+                    class="faq-answer"
+                    id="faq-a2"
+                    role="region"
+                    aria-labelledby="faq-q2"
+                  >
+                    <p>
+                      Color appointments, especially complex services like
+                      balayage, full color correction, or creative color, should
+                      be booked 1–2 weeks in advance. These services require
+                      dedicated time and a pre-consultation. Contact us to
+                      schedule your consultation today.
+                    </p>
+                  </dd>
+                </div>
+
+                <div class="faq-item" role="listitem">
+                  <dt>
+                    <button
+                      class="faq-question"
+                      aria-expanded="false"
+                      id="faq-q3"
+                      aria-controls="faq-a3"
+                    >
+                      What is your cancellation policy?
+                      <span class="faq-icon" aria-hidden="true"
+                        ><i class="fa-solid fa-plus"></i
+                      ></span>
+                    </button>
+                  </dt>
+                  <dd
+                    class="faq-answer"
+                    id="faq-a3"
+                    role="region"
+                    aria-labelledby="faq-q3"
+                  >
+                    <p>
+                      We require 24-hour notice for cancellations or
+                      rescheduling. Late cancellations or no-shows may incur a
+                      booking fee. We respect our stylists' time and ask that
+                      you respect it too — your appointment slot is held
+                      exclusively for you.
+                    </p>
+                  </dd>
+                </div>
+
+                <div class="faq-item" role="listitem">
+                  <dt>
+                    <button
+                      class="faq-question"
+                      aria-expanded="false"
+                      id="faq-q4"
+                      aria-controls="faq-a4"
+                    >
+                      Do you offer consultations before a major transformation?
+                      <span class="faq-icon" aria-hidden="true"
+                        ><i class="fa-solid fa-plus"></i
+                      ></span>
+                    </button>
+                  </dt>
+                  <dd
+                    class="faq-answer"
+                    id="faq-a4"
+                    role="region"
+                    aria-labelledby="faq-q4"
+                  >
+                    <p>
+                      Absolutely. For major transformations — color corrections,
+                      dramatic cuts, or first-time complex color — we highly
+                      recommend a free consultation first. This allows us to
+                      assess your hair health, understand your vision, and
+                      create a personalised plan for your best possible result.
+                    </p>
+                  </dd>
+                </div>
+
+                <div class="faq-item" role="listitem">
+                  <dt>
+                    <button
+                      class="faq-question"
+                      aria-expanded="false"
+                      id="faq-q5"
+                      aria-controls="faq-a5"
+                    >
+                      What products do you use in the salon?
+                      <span class="faq-icon" aria-hidden="true"
+                        ><i class="fa-solid fa-plus"></i
+                      ></span>
+                    </button>
+                  </dt>
+                  <dd
+                    class="faq-answer"
+                    id="faq-a5"
+                    role="region"
+                    aria-labelledby="faq-q5"
+                  >
+                    <p>
+                      We exclusively partner with premium, professional-grade
+                      brands including Matrix, Schwarzkopf Professional, Wella
+                      Professionals, and Olaplex. We also stock retail products
+                      for home maintenance so you can extend the life of your
+                      salon results.
+                    </p>
+                  </dd>
+                </div>
+
+                <div class="faq-item" role="listitem">
+                  <dt>
+                    <button
+                      class="faq-question"
+                      aria-expanded="false"
+                      id="faq-q6"
+                      aria-controls="faq-a6"
+                    >
+                      How do I maintain my cut or color at home?
+                      <span class="faq-icon" aria-hidden="true"
+                        ><i class="fa-solid fa-plus"></i
+                      ></span>
+                    </button>
+                  </dt>
+                  <dd
+                    class="faq-answer"
+                    id="faq-a6"
+                    role="region"
+                    aria-labelledby="faq-q6"
+                  >
+                    <p>
+                      After every service, your stylist will walk you through a
+                      personalised home care routine — from the right products
+                      to washing frequency and heat styling tips. We believe
+                      your hair should look amazing on day 30, not just day 1.
+                    </p>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+
+            <!-- Sticky CTA box -->
+            <aside
+              class="faq-cta-box diamond-plate"
+              aria-label="Book an appointment"
+            >
+              <p class="section-label">
+                <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+                Limited Slots
+              </p>
+              <h3
+                class="section-title"
+                style="font-size: clamp(2rem, 4vw, 3rem)"
+              >
+                Ready to<br />Transform?
+              </h3>
+              <p
+                style="
+                  color: var(--clr-silver);
+                  font-size: var(--fs-sm);
+                  line-height: 1.7;
+                  margin-bottom: 24px;
+                "
+              >
+                Don't wait — our appointment slots fill fast. Claim your spot
+                and start your transformation today.
+              </p>
+              <a
+                href="#cta-banner"
+                class="btn btn-metallic"
+                id="faq-book-btn"
+                style="width: 100%; justify-content: center"
+              >
+                <i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+                Book Your Spot
+              </a>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════════
+         CTA BANNER
+    ══════════════════════════════════════════════════════════ -->
+      <section id="cta-banner" aria-labelledby="cta-heading">
+        <div class="cta-banner-bg" aria-hidden="true"></div>
+        <svg
+          class="cta-banner-spiral"
+          viewBox="0 0 800 800"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <g stroke="white" fill="none" stroke-width="1.5">
+            <circle cx="400" cy="400" r="50" />
+            <circle cx="400" cy="400" r="120" />
+            <circle cx="400" cy="400" r="200" />
+            <circle cx="400" cy="400" r="290" />
+            <circle cx="400" cy="400" r="370" />
+            <ellipse
+              cx="400"
+              cy="400"
+              rx="200"
+              ry="370"
+              transform="rotate(45 400 400)"
+            />
+            <ellipse
+              cx="400"
+              cy="400"
+              rx="200"
+              ry="370"
+              transform="rotate(90 400 400)"
+            />
+            <ellipse
+              cx="400"
+              cy="400"
+              rx="200"
+              ry="370"
+              transform="rotate(135 400 400)"
+            />
+            <line x1="400" y1="30" x2="400" y2="770" />
+            <line x1="30" y1="400" x2="770" y2="400" />
+            <line x1="115" y1="115" x2="685" y2="685" />
+            <line x1="685" y1="115" x2="115" y2="685" />
+          </g>
+        </svg>
+
+        <div class="container">
+          <div class="cta-inner">
+            <div class="cta-urgency">
+              <i class="fa-solid fa-circle" aria-hidden="true"></i>
+              Limited Appointments This Week
+            </div>
+
+            <h2 id="cta-heading" class="cta-banner-title">
+              Claim<br />
+              <span class="metallic-text">Your Style.</span>
+            </h2>
+
+            <p class="cta-banner-sub">
+              Your most powerful version is waiting. One appointment can change
+              everything.<br />
+              <strong style="color: var(--clr-white)"
+                >Book now. Walk out transformed.</strong
+              >
+            </p>
+
+            <div class="cta-banner-actions">
+              <a
+                href="tel:+27000000000"
+                class="btn btn-metallic"
+                id="cta-book-btn"
+                aria-label="Book your hair transformation now"
+              >
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                Book Your Transformation
+              </a>
+              <a
+                href="https://wa.me/27000000000"
+                class="btn btn-outline"
+                id="cta-whatsapp-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp Hair Technique"
+              >
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                WhatsApp Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════════════
+         NEWSLETTER / VIP LIST
+    ══════════════════════════════════════════════════════════ -->
+      <section id="newsletter" aria-labelledby="newsletter-heading">
+        <div class="container">
+          <div class="newsletter-inner">
+            <div>
+              <p class="section-label">
+                <iconify-icon
+                  icon="mdi:crown"
+                  aria-hidden="true"
+                ></iconify-icon>
+                VIP Access
+              </p>
+              <h2 id="newsletter-heading" class="newsletter-title">
+                Join the<br />Inner Circle
+              </h2>
+              <p class="newsletter-sub">
+                Get exclusive access to priority bookings, style tips from our
+                masters, and special member offers.
+              </p>
+              <p class="newsletter-incentive">
+                <i class="fa-solid fa-tag" aria-hidden="true"></i>
+                10% off your first product purchase when you join
+              </p>
+            </div>
+
+            <div>
+              <form
+                class="newsletter-form"
+                id="newsletter-form"
+                novalidate
+                aria-label="Newsletter subscription form"
+              >
+                <div class="newsletter-fields">
+                  <label for="newsletter-email" class="sr-only"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    id="newsletter-email"
+                    class="newsletter-input"
+                    placeholder="Your email address"
+                    required
+                    autocomplete="email"
+                    aria-required="true"
+                    aria-label="Email address"
+                  />
+                  <button
+                    type="submit"
+                    class="btn btn-metallic"
+                    id="newsletter-submit-btn"
+                    aria-label="Subscribe to newsletter"
+                  >
+                    Join
+                  </button>
+                </div>
+                <p class="newsletter-disclaimer">
+                  No spam, ever. Unsubscribe at any time. By subscribing you
+                  agree to receive marketing communications.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════════ -->
+    <footer id="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Brand -->
+          <div>
+            <div class="footer-brand-name">Hair <span>Technique</span></div>
+            <p class="footer-tagline">
+              Precision. Artistry. Edge.<br />
+              Your transformation starts here.
+            </p>
+            <nav class="footer-socials" aria-label="Social media links">
+              <a
+                href="#"
+                class="footer-social-link"
+                aria-label="Hair Technique on Instagram"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a
+                href="#"
+                class="footer-social-link"
+                aria-label="Hair Technique on Facebook"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+              </a>
+              <a
+                href="#"
+                class="footer-social-link"
+                aria-label="Hair Technique on TikTok"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+              </a>
+              <a
+                href="#"
+                class="footer-social-link"
+                aria-label="Hair Technique on Pinterest"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-pinterest" aria-hidden="true"></i>
+              </a>
+            </nav>
+          </div>
+
+          <!-- Services -->
+          <div>
+            <h3 class="footer-col-title">Services</h3>
+            <nav class="footer-links" aria-label="Services navigation">
+              <a href="#services"
+                ><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                Precision Cuts</a
+              >
+              <a href="#services"
+                ><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                Color & Balayage</a
+              >
+              <a href="#services"
+                ><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                Keratin Treatments</a
+              >
+              <a href="#services"
+                ><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                Styling & Blowouts</a
+              >
+              <a href="#services"
+                ><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                Hair Therapy</a
+              >
+            </nav>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="footer-col-title">Quick Links</h3>
+            <nav class="footer-links" aria-label="Quick links navigation">
+              <a href="#technique"
+                ><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                The Craft</a
+              >
+              <a href="#story"
+                ><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                Our Story</a
+              >
+              <a href="#gallery"
+                ><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                Gallery</a
+              >
+              <a href="#testimonials"
+                ><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                Reviews</a
+              >
+              <a href="#faq"
+                ><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                FAQ</a
+              >
+              <a href="#cta-banner"
+                ><i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                Book Now</a
+              >
+            </nav>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h3 class="footer-col-title">Find Us</h3>
+            <address style="font-style: normal">
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                <span>123 Style Street,<br />Your City, 0001</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                <a href="tel:+27000000000" aria-label="Call Hair Technique"
+                  >+27 000 000 0000</a
+                >
+              </div>
+              <div class="footer-contact-item">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                <a
+                  href="https://wa.me/27000000000"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp Hair Technique"
+                  >WhatsApp Us</a
+                >
+              </div>
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                <span>Mon–Sat: 9am – 7pm<br />Sun: 10am – 5pm</span>
+              </div>
+            </address>
+          </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            &copy; <span id="footer-year"></span> Hair Technique. All rights
+            reserved. Crafted with precision.
+          </p>
+          <nav class="footer-legal" aria-label="Legal links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ── JS ──────────────────────────────────────────────── -->
+    <script>
+      // Inline: set footer year (no dependency needed)
+      document.getElementById("footer-year").textContent =
+        new Date().getFullYear();
+    </script>
+    <script src="js/main.js" defer></script>
+
+    <!-- Screenreader only helper -->
+    <style>
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+      }
+    </style>
+  </body>
+</html>
