@@ -94,6 +94,11 @@ if (hamburger && navLinks) {
       { opacity: 0 },
       { opacity: 1, duration: 0.6 },
       '-=0.3'
+    )
+    .fromTo('.hero-panel',
+      { opacity: 0, y: 28 },
+      { opacity: 1, y: 0, duration: 0.7 },
+      '-=0.55'
     );
 
   // ── Scroll Reveal helper ──────────────────────────────────
